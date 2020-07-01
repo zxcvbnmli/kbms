@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <title>知识库</title>
+    <link href="../css/style.default.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="signin">
+<section>
+    <div class="signinpanel">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="signin-info">
+                    <div class="logopanel">
+                        <h1><span>[</span>知识库 <span>]</span></h1>
+                    </div><!-- logopanel -->
+                    <div class="mb20"></div>
+                    <h5><strong>欢迎使用知识库管理平台</strong></h5>
+
+                </div><!-- signin0-info -->
+            </div><!-- col-sm-7 -->
+            <div class="col-md-5">
+                <form method="post" action="/admin/dologin.html">
+                    <h4 class="nomargin">用户登录</h4>
+                    <p class="mt5 mb20">请登录后使用本系统</p>
+                    <input type="text" class="form-control uname" name="userName" placeholder="用户名" />
+                    <input type="password" class="form-control pword" name="password" placeholder="密码" />
+
+                    <button class="btn btn-success btn-block">登录</button>
+                </form>
+            </div><!-- col-sm-5 -->
+        </div><!-- row -->
+        <div class="signup-footer">
+            <div class="pull-left">
+                <p>Copyright &copy; 北大青鸟信息技术有限公司</p>
+            </div>
+            <div class="pull-right">
+                Created By: <a href="http://www.mycodes.net/" target="_blank">北大青鸟</a>
+            </div>
+        </div>
+    </div><!-- signin -->
+</section>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery-migrate-1.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/modernizr.min.js"></script>
+<script src="../js/jquery.sparkline.min.js"></script>
+<script src="../js/jquery.cookies.js"></script
+<script src="../js/toggles.min.js"></script>
+<script src="../js/retina.min.js"></script>
+<script src="../js/custom.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        // Please do not use the code below
+        // This is for demo purposes only
+        var c = jQuery.cookie('change-skin');
+        if (c && c == 'greyjoy') {
+            jQuery('.btn-success').addClass('btn-orange').removeClass('btn-success');
+        } else if(c && c == 'dodgerblue') {
+            jQuery('.btn-success').addClass('btn-primary').removeClass('btn-success');
+        } else if (c && c == 'katniss') {
+            jQuery('.btn-success').addClass('btn-primary').removeClass('btn-success');
+        }
+    });
+</script>
+</body>
+</html>

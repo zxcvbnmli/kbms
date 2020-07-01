@@ -1,0 +1,56 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<input type="hidden" id="rootPath" value="<%=path%>"/>
+  <div class="leftpanel">
+
+    <div class="logopanel">
+        <h1><span>[</span>内容发布系统 <span>]</span></h1>
+    </div><!-- logopanel -->
+
+    <div class="leftpanelinner">
+
+        <!-- 这部分内容仅在移动端的时候显示 -->
+        <div class="visible-xs hidden-sm hidden-md hidden-lg">
+            <div class="media userlogged">
+            		<!-- 登录用户的头像 -->
+                <img alt="" src="<%=staticPath%>/images/photos/loggeduser.png" class="media-object">
+                <div class="media-body">
+                    <h4>登录的用户名</h4>
+                    <span>欢迎访问内容发布系统</span>
+                </div>
+            </div>
+
+            <h5 class="sidebartitle actitle">系统设置</h5>
+            <ul class="nav nav-pills nav-stacked nav-bracket mb30">
+              <li><a href="#"><i class="fa fa-lock"></i> <span>修改密码</span></a></li>
+              <li><a href="#"><i class="fa fa-sign-out"></i> <span>注销</span></a></li>
+            </ul>
+        </div>
+
+      <h5 class="sidebartitle">功能导航</h5>
+      <ul class="nav nav-pills nav-stacked nav-bracket">
+        <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>工作台</span></a></li>
+       
+        <li class="nav-parent"><a href=""><i class="fa fa-edit"></i> <span>系统管理</span></a>
+          <ul class="children">
+            <li><a href="<%=path%>/user/list.html?pageIndex=1"><i class="fa fa-caret-right"></i>用户管理</a></li>
+            <li><a href="<%=path%>/role/list.html?pageIndex=1"><i class="fa fa-caret-right"></i> 角色管理</a></li>
+            <li><a href="<%=path%>/jsp/admin/department/deptlist.jsp"><i class="fa fa-caret-right"></i> 部门管理</a></li>
+           </ul>
+        </li>
+         <li class="nav-parent"><a href=""><i class="fa fa-file-text"></i> <span>内容管理</span></a>
+          <ul class="children">
+            <li><a href="<%=path%>/jsp/admin/category/catelist.jsp"><i class="fa fa-caret-right"></i> 栏目管理</a></li>
+            <li><a href="<%=path%>/admin/typeServlet.do?opr=list&pageIndex=1"><i class="fa fa-caret-right"></i>分类管理</a></li>
+            <li><a href="<%=path%>/admin/articleServlet.do?opr=list&pageIndex=1"><i class="fa fa-caret-right"></i>文章管理</a></li>
+           </ul>
+        </li>
+         <%-- <li class="nav-parent"><a href="<%=path%>/admin/comServlet.do?opr=list&pageIndex=1"><i class="fa fa-edit"></i> <span>评论管理</span></a></li> --%>
+        <li class="nav-parent"><a href=""><i class="fa fa-file-text"></i> <span>评论管理</span></a>
+          <ul class="children">
+            <li><a href="<%=path%>/jsp/admin/comment/commentlist.jsp"><i class="fa fa-caret-right"></i> 评论管理</a></li>
+           
+           </ul>
+        </li>
+      </ul>
+	</div><!-- leftpanelinner -->
+  </div><!-- leftpanel -->
