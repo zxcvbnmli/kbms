@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="<%=staticPath%>/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
 
     <title>内容发布系统</title>
 
-    <link href="<%=staticPath%>/css/style.default.css" rel="stylesheet">
-    <link href="<%=staticPath%>/css/style.css" rel="stylesheet">
+    <link href="../css/style.default.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="<%=staticPath%>/js/html5shiv.js"></script>
-    <script src="<%=staticPath%>/js/respond.min.js"></script>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
 <section>
     <!--左侧导航  start-->
-    <%@ include file="../common/left.jsp" %>
+    <iframe src="common/left.html"/>
     <!--左侧导航  end-->
 
     <!--内容显示模块  start-->
     <div class="mainpanel">
-        <%@ include file="../common/header.jsp" %>
+        <iframe src="common/header.html"/>
         <div class="pageheader">
             <h2><i class="fa fa-home"></i> 工作台 <span>首页</span></h2>
             <div class="breadcrumb-wrapper">
@@ -45,7 +45,22 @@
     <!--内容显示模块  end-->
 </section>
 <!--底部显示模块  start-->
-<%@ include file="../common/footer.jsp" %>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery-migrate-1.2.1.min.js"></script>
+<script src="../js/jquery-ui-1.10.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/modernizr.min.js"></script>
+<script src="../js/jquery.sparkline.min.js"></script>
+<script src="../js/toggles.min.js"></script>
+<script src="../js/retina.min.js"></script>
+<script src="../js/chosen.jquery.min.js"></script>
+<script src="../js/jquery.cookies.js"></script>
+
+<script src="../js/flot/jquery.flot.min.js"></script>
+<script src="../js/flot/jquery.flot.resize.min.js"></script>
+<script src="../js/flot/jquery.flot.spline.min.js"></script>
+<script src="../js/morris.min.js"></script>
+<script src="../js/raphael-2.1.0.min.js"></script>
 <!--底部显示模块  end-->
 </body>
 </html>
