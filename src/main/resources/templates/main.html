@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -21,12 +21,12 @@
 <body>
 <section>
     <!--左侧导航  start-->
-    <iframe src="common/left.html"/>
+    <div th:include="common/left.html"></div>
     <!--左侧导航  end-->
 
     <!--内容显示模块  start-->
     <div class="mainpanel">
-        <iframe src="common/header.html"/>
+        <div th:include="common/header.html"></div>
         <div class="pageheader">
             <h2><i class="fa fa-home"></i> 工作台 <span>首页</span></h2>
             <div class="breadcrumb-wrapper">
